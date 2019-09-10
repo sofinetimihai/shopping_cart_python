@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title - List ....</title>
+</head>
+<br>
+
+{% for cat in category %}
+    <a href="http://127.0.0.1:8000/shop/category/{{cat.id}}/"> {{cat.name}}</a> </br>
+{% endfor %}
+</br>
+</br>
+
+{% for product in products %}
+    <a href="http://127.0.0.1:8000/shop/produs/{{product.id}}/"> {{product.name}}</a> </br>
+{% endfor %}
+</body>
+</html>
